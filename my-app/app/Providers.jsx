@@ -1,7 +1,7 @@
 import React from 'react'
 import { NextUIProvider } from '@nextui-org/react'
 
-export const Provider = ({ children }) => {
+export const Providers = ({ children }) => {
     return (
         <NextUIProvider>
             {children}

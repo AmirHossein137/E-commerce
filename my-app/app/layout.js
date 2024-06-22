@@ -1,4 +1,5 @@
-import { Provider } from "./Provider";
+import { Providers } from "./Providers";
+import StoreProvider from "./StoreProvider";
 import "./globals.css";
 
 export const metadata = {
@@ -10,7 +11,11 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <body>
-        <Provider>{children}</Provider>
+        <StoreProvider>
+          <Providers>
+            <div className="container px-4 mx-auto">{children}</div>
+          </Providers>
+        </StoreProvider>
       </body>
     </html>
   );
