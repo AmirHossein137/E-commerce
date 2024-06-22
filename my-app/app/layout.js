@@ -1,6 +1,7 @@
 import { Providers } from "./Providers";
 import StoreProvider from "./StoreProvider";
 import "./globals.css";
+import Header from "@/components/navbar/Header";
 
 export const metadata = {
   title: "فروشگاه پیکودوز",
@@ -13,7 +14,10 @@ export default function RootLayout({ children }) {
       <body>
         <StoreProvider>
           <Providers>
-            <div className="container px-4 mx-auto">{children}</div>
+            <Header />
+            <main>
+              <div className="container px-4 mx-auto">{children}</div>
+            </main>
           </Providers>
         </StoreProvider>
       </body>
