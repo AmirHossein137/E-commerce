@@ -6,14 +6,15 @@ import Image from 'next/image';
 import DetailProduct from '@/components/detailproduct/DetailProduct';
 import { Settings, Send, ShieldCheck } from 'lucide-react';
 import { Button } from '@nextui-org/button';
+import DetailTabs from '@/components/detailtabs/DetailTabs';
 
 const SingleProduct = () => {
   return (
     <div className="mt-5">
       <Breadcrumb />
-      <div className="grid grid-cols-12 gap-5">
+      <div className="grid grid-cols-12 gap-5 mb-10">
         <div className="col-span-9">
-          <div className="border flex gap-3 shadow-md border-gray-100 rounded-xl p-5">
+          <div className="border flex gap-3 shadow-md border-gray-100 rounded-xl p-5 mb-10">
             <div className="w-[60%]">
               <div className="flex flex-col gap-3 mb-4">
                 <span className="text-lg text-right font-bold text-gray-800">گوشی موبایل اپل مدل iPhone 13 CH/A Not Active ظرفیت 128 گیگابایت - رم 4 گیگابایت</span>
@@ -31,6 +32,9 @@ const SingleProduct = () => {
                 <Image className="rounded-xl h-full object-cover" src={ProductImg} />
               </div>
             </div>
+          </div>
+          <div>
+            <DetailTabs />
           </div>
         </div>
         <div className="col-span-3">
@@ -67,6 +71,7 @@ const SingleProduct = () => {
           </div>
         </div>
       </div>
+
     </div>
   )
 }
