@@ -11,7 +11,7 @@ import DetailTabs from '@/components/detailtabs/DetailTabs';
 const SingleProduct = () => {
   return (
     <div className="mt-5">
-      <Breadcrumb />
+      <Breadcrumb titleOne={"موبایل"} titleTwo={"اپل"}/>
       <div className="grid grid-cols-12 gap-5 mb-10">
         <div className="col-span-9">
           <div className="border flex gap-3 shadow-md border-gray-100 rounded-xl p-5 mb-10">

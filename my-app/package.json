@@ -9,6 +9,7 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "@nextui-org/accordion": "^2.0.35",
     "@nextui-org/avatar": "^2.0.30",
     "@nextui-org/badge": "^2.0.29",
     "@nextui-org/breadcrumbs": "^2.0.10",
@@ -21,6 +22,7 @@
     "@nextui-org/modal": "^2.0.36",
     "@nextui-org/navbar": "^2.0.33",
     "@nextui-org/react": "^2.4.2",
+    "@nextui-org/slider": "^2.2.12",
     "@nextui-org/tabs": "^2.0.32",
     "@reduxjs/toolkit": "^2.2.5",
     "framer-motion": "^11.2.11",
