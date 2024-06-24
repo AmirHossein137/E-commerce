@@ -71,7 +71,6 @@ const SingleProduct = () => {
           </div>
         </div>
       </div>
-
     </div>
   )
 }
