@@ -2,12 +2,17 @@
 
 import React, { useState } from 'react'
 import { Filter } from 'lucide-react';
-import { Accordion, AccordionItem, Input } from "@nextui-org/react";
+import { Accordion, AccordionItem, Input , Checkbox } from "@nextui-org/react";
 import { Slider } from "@nextui-org/react";
 
 const CategoryFilter = () => {
 
     const [sliderValue, setSliderValue] = useState([100000, 2000000])
+    const [val , setVal] = useState('مشکی')
+    
+    const handleSubmit = (e) => {
+        console.log(val)
+    }
 
     return (
         <div className='border border-gray-200 rounded-lg'>
@@ -17,7 +22,7 @@ const CategoryFilter = () => {
             </div>
             <div className='flex flex-col p-2'>
                 <Accordion>
-                    <AccordionItem key="1" aria-label="Accordion 1" className='text-xs' title="محدوده قیمت">
+                    <AccordionItem key="1" aria-label="Accordion 1" title="محدوده قیمت">
                         <div className='flex flex-col'>
                             <Slider
                                 step={50}
@@ -52,7 +57,10 @@ const CategoryFilter = () => {
                         </div>
                     </AccordionItem>
                     <AccordionItem key="2" aria-label="Accordion 2" title="رنگ">
-
+                        <div className='flex flex-col gap-2'>
+                        <Checkbox value={val} onChange={handleSubmit} classNames={{ label : "pr-2" }} color='danger' size="md">مشکی</Checkbox>
+                        <Checkbox value={val} onChange={handleSubmit} classNames={{ label : "pr-2" }} color='danger' size="md">سبز</Checkbox>
+                        </div>
                     </AccordionItem>
                 </Accordion>
             </div>
