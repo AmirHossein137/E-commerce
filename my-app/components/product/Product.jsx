@@ -26,7 +26,7 @@ const Product = () => {
                                 </div>
                             </div>
                             <div>
-                                <Button className="w-full font-bold">
+                                <Button className="w-full font-bold bg-rose-500 text-white">
                                     افزودن به سبد خرید
                                 </Button>
                             </div>
@@ -50,7 +50,7 @@ const Product = () => {
                                 </div>
                             </div>
                             <div>
-                                <Button className="w-full font-bold">
+                                <Button className="w-full font-bold bg-rose-500 text-white">
                                     افزودن به سبد خرید
                                 </Button>
                             </div>
@@ -74,7 +74,7 @@ const Product = () => {
                                 </div>
                             </div>
                             <div>
-                                <Button className="w-full font-bold">
+                                <Button className="w-full font-bold bg-rose-500 text-white">
                                     افزودن به سبد خرید
                                 </Button>
                             </div>
@@ -98,7 +98,7 @@ const Product = () => {
                                 </div>
                             </div>
                             <div>
-                                <Button className="w-full font-bold">
+                                <Button className="w-full font-bold bg-rose-500 text-white">
                                     افزودن به سبد خرید
                                 </Button>
                             </div>
